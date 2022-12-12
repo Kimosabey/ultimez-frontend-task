@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* General Properties with color /Shades is done */
+
+/* Custom Variable is not used for Now! */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #001941;
+
+  font-family: 'Inter', sans-serif;
+}
+
+#full-size {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* or overflow:auto; if you want scrollbars */
+}
+
+/* Login Page */
+
+.form-container {
+  height: 90vh;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Register Page */
+.form-register-container {
+  margin-top: -7%;
+
+  height: 90vh;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h3 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.login-title {
+  font-weight: 300;
+}
+
+.login-title + h3 {
+  font-weight: 200;
+}
+
+/* Login Page */
+
+.form {
+  width: 600px;
+  background-color: #08295e;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.75);
+  transition: 0.4s ease-in-out;
+}
+
+.form > .input-container {
+  width: 100%;
+  background: #153973;
+  border-radius: 5px;
+  /* border: 1px solid gray; */
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+}
+
+.form--input {
+  color: whitesmoke;
+  outline: none;
+  border: none;
+  padding: 15px;
+  outline: transparent;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+.form-input:focus,
+.form-input:active {
+  background: transparent;
+  background-color: transparent;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: text-indent 0.4s 0.4s ease-in-out;
+  text-indent: -100%;
+  opacity: 1;
+  outline: none;
+}
+
+.form--submit {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 5px;
+  color: #344d67;
+  background-color: #ffbf00;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-container {
+  width: 60%;
+  border-radius: 5px;
+  padding: 0px;
+  display: flex;
+  gap: 5px;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-container > .form--register-btn {
+  background: yellow;
+  width: 100%;
+}
+/* Register Page */
+.form--register {
+  margin: 0px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 5px;
+  color: #344d67;
+  background-color: #ffbf00;
+  border: none;
+  cursor: pointer;
+}
+
+.form--submit-register {
+  width: 60%;
+}
+/* .login-btn{
+   margin-left: auto;
+    
+} */
+
+.login-header {
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.form-link-holder {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.btn-sign-up {
+  margin-left: 10px;
+  border: transparent;
+  background: inherit;
+  color: wheat;
+  border-bottom: gray;
+  border-block-end-style: solid;
+}
+
+.form-register {
+  width: 60%;
+  height: 60%;
+  background-color: #08295e;
+  padding: 25px 30px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.75);
+  transition: 0.4s ease-in-out;
+}
+
+.form-register > .input-container {
+  width: 60%;
+  background: #153973;
+  border-radius: 5px;
+  /* border: 1px solid gray; */
+  padding: 10px 10px;
+  display: flex;
+  gap: 5px;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+}
+
+select {
+  margin-left: 10px;
+}
+
+.input-container > select {
+  appearance: none;
+  background: transparent;
+  color: #686f75;
+  border: 0;
+  border-radius: 0.25em;
+  outline: 0;
+  font: inherit;
+  width: 100%;
+  height: 30px;
+}
+
+option {
+  color: inherit;
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+/* Table */
+
+.table-container {
+  height: 90vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  background-color: #08295e;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.75);
+  transition: 0.4s ease-in-out;
+}
+
+#table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table td,
+#table th {
+  text-align: center;
+  border: 1px solid #131313;
+  padding: 10px;
+}
+
+#table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table tr:hover {
+  background-color: #ddd;
+}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background: #153973;
+  color: white;
+}
+
+/* Few Responsive is done for particular widths */
+@media (max-width: 700px) {
+  .form {
+    transition: 0.4s ease-in-out;
+    width: 400px;
+    padding: 50px;
+    gap: 15px;
+  }
+
+  .form > .input-container {
+    width: 100%;
+  }
+
+  .form-register {
+    transition: 0.4s ease-in-out;
+    width: 400px;
+    padding: 50px;
+    gap: 15px;
+  }
+
+  .form-register > .input-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .form-register {
+    margin-top: 20px;
+    width: 70%;
+  }
+
+  .form-register > .input-container {
+    width: 80%;
+  }
+  .form-register-container {
+    overflow: hidden;
+    padding: 5%;
+    /* background-color: #ffbf00; */
+    margin-top: 20px;
+  }
+}
+/* For now NO Mobile Responsive is Done as its not Mentioned */
